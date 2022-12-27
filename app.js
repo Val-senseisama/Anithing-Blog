@@ -27,7 +27,8 @@ mongoose.connect("mongodb+srv://1Valizevbigiedavid:valisawesomer@cluster0.ayjbz.
 
 const postSchema = {
     title: String,
-    content: String
+    content: String,
+    sponsoredPost: {type:Boolean, default:false}
 };
 
 const Post = mongoose.model("Post", postSchema);
@@ -87,6 +88,8 @@ app.get("/posts/:postId", function(req, res) {
 
     });
 
+   
+
     // posts.forEach(function(post) {
     //     const storedTitle = _.lowerCase(post.title);
 
@@ -96,6 +99,44 @@ app.get("/posts/:postId", function(req, res) {
     //     }
     // });
 });
+
+app.get("/admin", function(req, res){
+
+    Post.find({}, function(err, posts){
+
+        res.render("admin", {
+             posts: posts
+            });
+
+    });
+
+})
+
+app.patch("/admin/posts/:postId", function(req, res) {
+        let newTitle = req.body.postTitle;
+        let newContent = req.body.newPost;
+        let newPostId = req.params.postId;
+    Post.findOne({_id: newPostId }, {$set: {title: newTitle, content: newContent}}, function(err){
+        if(!err){
+            res.redirect(newPostId)
+        }else{
+            console.log(err);
+        }
+    });
+
+});
+
+app.get("/admin/posts/:postId", function(req, res) {
+    const requestedPostId= req.params.postId;
+    Post.findOne({_id:requestedPostId}, function(err, post){
+
+        res.render("adminPost", {
+            title:post.title,
+            content:post.content
+        });
+
+    });
+})
 
 
 

@@ -1,0 +1,36 @@
+<%- include("partials/header");-%>
+<section >
+
+    <div class="pg13 postBack" id="comp">
+        <h1 class="compose" style="padding-left: 20px;">COMPOSE</h1>
+        <div class="blog">
+
+            <form class="content" action="/compose" method="post">
+
+                <p class= "content">
+                    <div class="form-group">
+                        <label for="postTitle"><h2 class="hee">Title</h2></label>
+                         <textarea name="postTitle" class=" valz" id="postTitle" cols="25" rows="1" style="font-size: 32px;" value="<%= title %> "></textarea>
+    
+                    
+                         <label for="newPost"><h2 class="hee">Post</h2></label>
+                         <textarea name="newPost" id="newPost"  class=" valz" cols="25" rows="7" value=" <%= content %> "></textarea>
+                     </div>
+                  
+                </p>
+    
+                
+                <button class="btn btn-lg btn-block vbutt mx-auto" type="submit" >
+                    PUBLISH
+                </button>
+    
+            </form>
+            
+        </div>
+       
+    
+    </div>
+
+</section>
+
+<%- include("partials/footer");-%>   
