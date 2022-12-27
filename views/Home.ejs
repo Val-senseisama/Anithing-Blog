@@ -1,0 +1,31 @@
+ <%- include("partials/header") -%>
+ 
+ <div id="landing">
+
+      <section class="pg13" >
+        <div class="chilli">
+          <h1 class="heading">ANYTHING </h1>
+          
+          <p class= "content"> <%= homeStartingContent %></p>
+    
+        </div>
+      </section>
+      
+     </div>
+
+     <div id="postsArea">
+
+
+    <% posts.forEach(function(post) {  %>
+
+      <h2> <%= post.title %> </h2>
+       <p>
+          <%= post.content.substring(0, 100) + " ..." %> <a href="/posts/<%=post.id%>">Read More</a>
+      </p>
+
+     <% }) %>
+
+    
+     </div>
+ 
+     <%- include("partials/footer") -%>     

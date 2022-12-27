@@ -1,0 +1,146 @@
+#landing {
+    margin: 0 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/bck.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    padding: 20px, 20px;
+    text-align: center;
+    color: #fff;
+  }
+  #content-wrap {
+    padding-bottom: 2.5rem;
+  }
+   
+ .nav{
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+ }
+
+  .valz {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border-bottom: 1px solid #ced4da;
+    border-top: 0rem;
+    border-right: 0rem;
+    border-left: 0rem;
+    overflow-y: auto;
+  }
+
+  .valz:focus-visible{
+    outline-width: 0rem !important;
+  }
+
+  #postsArea {
+    color: #292428;
+    background-color: #ecebea;
+    padding: 10px 30px;
+    text-align: left;
+  }
+
+  #postsArea h2{
+    text-decoration: underline;
+    
+  }
+
+  .content {
+    padding: 10px 30px;
+  }
+
+  .chilli{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .postBack {
+    background-color: #fafafa;
+    min-height: 100vh;
+  }
+ 
+  .blog { 
+    background-color:#fff;
+    margin-bottom: 100px !important;
+    max-width: 60vw;
+    line-height: 2rem;
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  }
+
+  @media (max-width: 500px) {
+    .blog {
+      min-width: 90%;
+    }
+  }
+   
+ .valnav {
+    background-color: #292428;
+    padding: 10px 35px;
+  }
+  #author {
+    height: 40vh;
+    border-color: transparent;
+    border-radius: 10px;
+    width: 40vw;
+  }
+  .btn {
+    background-color: #292428;
+    color: #fff;
+    border-radius: 15px;
+    margin: 20px !important;
+  }
+
+  .heading {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .pg13 {
+    padding: 20px, 20px;
+  }
+
+  .compose{
+    font-size: 3.9rem;
+    font-family: cursive;
+    padding: 20px;
+    color: #292428;
+    text-align: center;
+  }
+
+  .hee{
+    color: #fff;
+    padding: 0, 10px, 0, 20px;
+  }
+.footer {
+  font-size: 10px;
+  background-color: #292428;
+  text-align: center;
+  color: #fff;
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+}
+
+.copyr {
+  padding: 20px 0 20px;
+  margin-bottom: 0%;
+}

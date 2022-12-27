@@ -1,0 +1,66 @@
+body {
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
+.valnav {
+ 
+}
+
+.heading {
+  font-size: 3.9rem;
+}
+
+.content {
+  font-size: 1.5em;
+  margin: 20px;
+  line-height: 1.5em;
+}
+ 
+ .u-section-1 {
+  background-image:  url("../images/bck.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 100vh;
+}
+
+.u-section-1 .u-text-1 {
+  margin: 60px auto 0;
+}
+
+.u-section-1 .u-text-2 {
+  width: auto;
+  font-weight: 300;
+  margin: 536px 16px 60px;
+}
+
+@media (max-width: 575px) {
+   .u-section-1 {
+    background-position: 84.98% 50%;
+  }
+
+  .content {
+    line-height: normal;
+  }
+
+  .u-section-1 .u-text-1 {
+    font-size: 3.75rem;
+    width: auto;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin: 538px auto 59px;
+  }
+}
